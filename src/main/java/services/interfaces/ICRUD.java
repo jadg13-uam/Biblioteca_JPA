@@ -13,3 +13,5 @@ public interface ICRUD {
 
     <T> T findById(Integer id,  Class<T> clazz);
 }
+
+

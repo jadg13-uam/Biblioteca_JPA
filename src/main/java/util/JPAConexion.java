@@ -5,7 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 public class JPAConexion {
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("alicia");
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa_db");
 
     public static EntityManager getEntityManager() {
         return emf.createEntityManager();

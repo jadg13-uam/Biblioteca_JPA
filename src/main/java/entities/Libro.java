@@ -30,3 +30,5 @@ public class Libro {
     @JoinColumn(name="categoria_id")
     private Categoria categoria;
 }
+
+

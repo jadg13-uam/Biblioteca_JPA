@@ -21,7 +21,7 @@ public class Main {
         Autor r = new Autor();
         r.setNombre("Ruben Dario");
         r.setNacionalidad("Nicaraguense");
-        dao.insert(a);
+        dao.insert(r);
     }
 
     public static void listarAutores() {

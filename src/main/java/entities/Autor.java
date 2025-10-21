@@ -10,6 +10,11 @@ import java.time.LocalDate;
 @Table(name = "autores")
 @Getter
 @Setter
+@NamedQueries({
+        @NamedQuery(name = "autores.All",
+        query = "select a from Autor a"
+        )
+})
 public class Autor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +26,6 @@ public class Autor {
     private String nacionalidad;
 
     private LocalDate fechaNac;
+
+
 }
